@@ -1,0 +1,15 @@
+export default {
+    "none": "0px",
+    "xxs": "1px",
+    "xs": "2px",
+    "s": "4px",
+    "m": "8px",
+    "xm": "12px",
+    "l": "16px",
+    "xl": "24px",
+    "xxl": "32px",
+    "xxxl": "48px",
+    "j": "64px",
+    "xj": "80px",
+    "xxj": "96px",
+};
