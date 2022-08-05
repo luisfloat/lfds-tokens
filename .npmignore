@@ -1,0 +1,7 @@
+.vscode
+.gitignore
+node_modules/
+rollup.config.js
+LICENSE.md
+README.md
+src/
