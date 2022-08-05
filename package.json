@@ -12,5 +12,14 @@
   "repo": "github:luisfloat/lfds-corallia",
   "bugs": {
     "url": "https://github.com/luisfloat/lfds-corallia/issues"
+  },
+  "type": "module",
+  "devDependencies": {
+    "rollup": "^2.77.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "scripts": {
+    "main:compile": "rollup --config rollup.config.js"
   }
 }
