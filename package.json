@@ -1,0 +1,15 @@
+{
+  "name": "lfds-corallia",
+  "version": "0.0.0",
+  "description": "Luis Float design system tokens using CoralliaJS.",
+  "keywords": [
+    "lfds",
+    "corallia"
+  ],
+  "author": "Luis Float <contact@luisfloat.com> (https://luisfloat.com)",
+  "homepage": "https://github.com/luisfloat/lfds-corallia",
+  "repo": "github:luisfloat/lfds-corallia",
+  "bugs": {
+    "url": "https://github.com/luisfloat/lfds-corallia/issues"
+  }
+}
