@@ -1,6 +1,6 @@
 {
   "name": "lfds-corallia",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Luis Float design system tokens using CoralliaJS.",
   "keywords": [
     "lfds",
@@ -15,6 +15,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "corallia-js": "github:inforgdev/corallia-js",
     "rollup": "^2.77.2",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-terser": "^7.0.2"
@@ -22,5 +23,11 @@
   "main": "./dist/lfds-corallia.js",
   "scripts": {
     "main:bundle": "rollup --config rollup.config.js"
+  },
+  "exports": {
+    ".": "./dist/lfds-corallia.js",
+    "./less": "./dist/lfds-tokens.less",
+    "./scss": "./dist/lfds-tokens.scss",
+    "./styl": "./dist/lfds-tokens.styl"
   }
 }
