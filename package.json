@@ -21,6 +21,6 @@
   },
   "main": "./dist/lfds-corallia.js",
   "scripts": {
-    "main:compile": "rollup --config rollup.config.js"
+    "main:bundle": "rollup --config rollup.config.js"
   }
 }
