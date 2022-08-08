@@ -22,7 +22,8 @@
   },
   "main": "./dist/lfds-corallia.js",
   "scripts": {
-    "main:bundle": "rollup --config rollup.config.js"
+    "main:bundle": "rollup --config rollup.config.js",
+    "langs:stringify": "node ./src/main/langs/index.js"
   },
   "exports": {
     ".": "./dist/lfds-corallia.js",
