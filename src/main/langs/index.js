@@ -3,7 +3,7 @@ import { langs, stringifyProc } from "octopo-js";
 import { coralliaProc } from "corallia-js";
 import tokens from "../core/index.js";
 
-let localLangs = [ langs.lessMin, langs.scss, langs.styl ];
+let localLangs = [ langs.lessMin, langs.scssMin, langs.stylMin ];
 
 for(let lang of localLangs) {
     const octopoData = vesic({

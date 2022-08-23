@@ -1,6 +1,6 @@
 {
   "name": "lfds-corallia",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Luis Float design system tokens using CoralliaJS.",
   "keywords": [
     "lfds",
