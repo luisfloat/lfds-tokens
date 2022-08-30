@@ -3,9 +3,12 @@ import { langs, stringifyProc } from "octopo-js";
 import { coralliaProc } from "corallia-js";
 import tokens from "../core/index.js";
 
-let localLangs = [ langs.lessMin, langs.scssMin, langs.stylMin ];
+const config = {
+    langs: [ langs.lessMin, langs.scssMin, langs.stylMin ],
+    distPath: "./dist/lfds-tokens",
+};
 
-for(let lang of localLangs) {
+for(let lang of config.langs) {
     const octopoData = vesic({
         src: val(tokens),
         proc: coralliaProc,
@@ -21,7 +24,7 @@ for(let lang of localLangs) {
         sink: mkfile,
         meta: {
             grammar: lang,
-            path: "./dist/lfds-tokens" + lang.extname,
+            path: config.distPath + lang.extname,
         },
     });
 }
