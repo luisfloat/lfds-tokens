@@ -8,7 +8,7 @@ const config = {
     distPath: "./dist/lfds-tokens",
 };
 
-for(let lang of config.langs) {
+config.langs.forEach((lang) => {
     const octopoData = vesic({
         src: val(tokens),
         proc: coralliaProc,
@@ -27,4 +27,4 @@ for(let lang of config.langs) {
             path: config.distPath + lang.extname,
         },
     });
-}
+});
