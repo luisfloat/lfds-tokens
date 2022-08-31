@@ -25,7 +25,8 @@
   "main": "./dist/lfds-corallia.js",
   "scripts": {
     "main:bundle:js": "rollup --config rollup.config.js",
-    "main:bundle:css": "node ./src/main/langs/index.js"
+    "main:bundle:css": "node ./src/main/langs/index.js",
+    "main:bundle": "npm run main:bundle:js ; npm run main:bundle:css"
   },
   "exports": {
     ".": "./dist/lfds-corallia.js",
