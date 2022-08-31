@@ -48,8 +48,8 @@ import 'lfds-corallia/styl'
 
 Name | Script | Description
 -----|---------|-----------------
-`main:bundle` | ```npm run main:bundle``` | Bundle tokens to JavaScript
-`langs:stringify` | ```npm run langs:stringify``` | Bundle tokens for each CSS preprocessor language
+`main:bundle:js` | ```npm run main:bundle:js``` | Bundle tokens to JavaScript
+`main:bundle:css` | ```npm run main:bundle:css``` | Bundle tokens for each CSS preprocessor language
 
 ## Author
 
