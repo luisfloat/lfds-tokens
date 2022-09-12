@@ -4,7 +4,7 @@ import { terser } from "rollup-plugin-terser";
 export default {
     input: "./src/main/core/index.js",
     output: {
-        file: "./dist/lfds-corallia.js",
+        file: "./dist/lfds-tokens.js",
     },
     plugins: [
         nodeResolve(),
