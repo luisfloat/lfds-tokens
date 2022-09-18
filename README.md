@@ -1,4 +1,4 @@
-# lfds-corallia
+# lfds-tokens
 
 <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-LICENSE.md-005c99?style=flat&amp;logo=" alt="License"/></a>
 
@@ -21,27 +21,27 @@ It's the project for my personal design system tokens.
 Download and install via NPM from Github repository:
 
 ```bash
-npm install --save-dev luisfloat/lfds-corallia
+npm install --save-dev luisfloat/lfds-tokens
 ```
 
 For usage, using JavaScript, import it:
 
 ```js
-import lfdsCorallia from 'lfds-corallia'
+import lfdsTokens from 'lfds-tokens'
 ```
 
 Or using CSS preprocessors, import it before referring to the tokens:
 
 ```scss
-import 'lfds-corallia/scss'
+import 'lfds-tokens/scss'
 ```
 
 ```less
-import 'lfds-corallia/less'
+import 'lfds-tokens/less'
 ```
 
 ```stylus
-import 'lfds-corallia/styl'
+import 'lfds-tokens/styl'
 ```
 
 ## Developing
