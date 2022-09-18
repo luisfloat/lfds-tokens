@@ -1,4 +1,4 @@
-import { mkfile, ret, val, vesic } from "vesic-js";
+import { mkfile, val, stream } from "vesic-js";
 import { langs, stringifyProc } from "octopo-js";
 import { coralliaProc } from "corallia-js";
 import tokens from "../core/index.js";
@@ -8,23 +8,11 @@ const config = {
     distPath: "./dist/lfds-tokens",
 };
 
-config.langs.forEach((lang) => {
-    const octopoData = vesic({
-        src: val(tokens),
-        proc: coralliaProc,
-        sink: ret,
-        meta: {
-            grammar: lang,
-        },
-    });
-
-    vesic({
-        src: val(octopoData),
-        proc: stringifyProc,
-        sink: mkfile,
-        meta: {
-            grammar: lang,
-            path: config.distPath + lang.extname,
-        },
-    });
-});
+config.langs.forEach((lang) => stream()
+    .src(val(tokens))
+    .meta({ grammar: lang })
+    .proc(coralliaProc)
+    .proc(stringifyProc)
+    .meta({ path: config.distPath + lang.extname })
+    .sink(mkfile)
+);
