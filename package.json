@@ -22,14 +22,21 @@
     "rollup-plugin-terser": "^7.0.2",
     "vesic-js": "github:inforgdev/vesic-js"
   },
-  "main": "./dist/lfds-tokens.js",
+  "main": "./dist/lfds-tokens.cjs",
+  "module": "./dist/lfds-tokens.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "main:bundle:js": "rollup --config rollup.config.js",
     "main:bundle:css": "node ./src/main/langs/index.js",
     "main:bundle": "npm run main:bundle:js ; npm run main:bundle:css"
   },
   "exports": {
-    ".": "./dist/lfds-tokens.js",
+    ".": {
+      "require": "./dist/lfds-tokens.cjs",
+      "import": "./dist/lfds-tokens.js"
+    },
     "./less": "./dist/lfds-tokens.less",
     "./scss": "./dist/lfds-tokens.scss",
     "./styl": "./dist/lfds-tokens.styl"
