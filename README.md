@@ -44,7 +44,9 @@ import 'lfds-tokens/less'
 import 'lfds-tokens/styl'
 ```
 
-## Developing
+## Documentation
+
+### Scripts
 
 Name | Script | Description
 -----|---------|-----------------
