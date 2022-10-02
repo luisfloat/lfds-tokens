@@ -50,9 +50,9 @@ import 'lfds-tokens/styl'
 
 Name | Script | Description
 -----|---------|-----------------
-`main:bundle:js` | ```npm run main:bundle:js``` | Bundle tokens to JavaScript
-`main:bundle:css` | ```npm run main:bundle:css``` | Bundle tokens for each CSS preprocessor language
-`main:bundle` | ```npm run main:bundle``` | Execute both
+`main:compile:js` | ```npm run main:compile:js``` | Bundle tokens to JavaScript
+`main:compile:css` | ```npm run main:compile:css``` | Bundle tokens for each CSS preprocessor language
+`main:compile` | ```npm run main:compile``` | Execute both
 
 ## Author
 
