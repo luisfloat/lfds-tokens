@@ -28,9 +28,9 @@
     "dist"
   ],
   "scripts": {
-    "main:bundle:js": "rollup --config rollup.config.js",
-    "main:bundle:css": "node ./src/main/langs/index.js",
-    "main:bundle": "npm run main:bundle:js ; npm run main:bundle:css"
+    "main:compile:js": "rollup --config rollup.config.js",
+    "main:compile:css": "node ./src/main/langs/index.js",
+    "main:compile": "npm run main:compile:js ; npm run main:compile:css"
   },
   "exports": {
     ".": {
