@@ -1,6 +1,6 @@
 import { mkfile, val, stream } from "vesic-js";
 import { langs, stringifyProc } from "octopo-js";
-import { coralliaProc } from "corallia-js";
+import { octopizeTokens } from "corallia-js";
 import tokens from "../core/index.js";
 
 const config = {
@@ -11,7 +11,7 @@ const config = {
 config.langs.forEach((lang) => stream()
     .src(val(tokens))
     .meta({ grammar: lang })
-    .proc(coralliaProc)
+    .proc((data, meta) => octopizeTokens(data, meta.grammar))
     .proc(stringifyProc)
     .meta({ path: config.distPath + lang.extname })
     .sink(mkfile)
