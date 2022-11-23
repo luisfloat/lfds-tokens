@@ -1,4 +1,4 @@
-import { mkfile, val, stream } from "vesic-js";
+import { writeFile, stream } from "vesic-js";
 import { langs, stringifyProc } from "octopo-js";
 import { octopizeTokens } from "corallia-js";
 import tokens from "../core/index.js";
@@ -9,10 +9,10 @@ const config = {
 };
 
 config.langs.forEach((lang) => stream()
-    .src(val(tokens))
+    .src(tokens)
     .meta({ grammar: lang })
-    .proc((data, meta) => octopizeTokens(data, meta.grammar))
+    .proc((data, {grammar}) => octopizeTokens(data, grammar))
     .proc(stringifyProc)
     .meta({ path: config.distPath + lang.extname })
-    .sink(mkfile)
+    .sink(writeFile)
 );
