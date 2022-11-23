@@ -29,7 +29,7 @@
   ],
   "scripts": {
     "main:build:js": "rollup --config rollup.config.js",
-    "main:build:css": "node ./src/main/langs/index.js",
+    "main:build:css": "node ./src/task/css.js",
     "main:build": "npm run main:compile:js ; npm run main:compile:css"
   },
   "exports": {

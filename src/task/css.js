@@ -1,7 +1,7 @@
 import { writeFile, stream } from "vesic-js";
 import { langs, stringifyProc } from "octopo-js";
 import { octopizeTokens } from "corallia-js";
-import tokens from "../core/index.js";
+import tokens from "../main/core/index.js";
 
 const config = {
     langs: [ langs.lessMin, langs.scssMin, langs.stylMin ],
