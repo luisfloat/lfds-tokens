@@ -28,9 +28,9 @@
     "dist"
   ],
   "scripts": {
-    "main:build:js": "rollup --config rollup.config.js",
-    "main:build:css": "node ./src/task/css.js",
-    "main:build": "npm run main:compile:js ; npm run main:compile:css"
+    "main:build:js": "vesic run js",
+    "main:build:css": "vesic run css",
+    "main:build": "vesic run js ; vesic run css"
   },
   "exports": {
     ".": {
