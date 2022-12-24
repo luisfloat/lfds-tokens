@@ -1,6 +1,6 @@
 import { octopizeTokens } from "corallia-js";
 import { generate, langs, _body } from "octopo-js";
-import { task, mkfile } from "vesic-js";
+import { mkfile, task } from "vesic-js";
 import tokens from "../src/main/core/index.js";
 
 function main() {
