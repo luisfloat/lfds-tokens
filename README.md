@@ -48,11 +48,10 @@ import 'lfds-tokens/styl'
 
 ### Scripts
 
-Name | Script | Description
------|---------|-----------------
-`main:compile:js` | ```npm run main:compile:js``` | Bundle tokens to JavaScript
-`main:compile:css` | ```npm run main:compile:css``` | Bundle tokens for each CSS preprocessor language
-`main:compile` | ```npm run main:compile``` | Execute both
+Vesic CLI
+
+- `$ vesic list` - list all scripts.
+- `$ vesic <task>` - run a script.
 
 ## Author
 
