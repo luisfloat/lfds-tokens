@@ -1,6 +1,6 @@
 import { genGpl } from "corallia-js";
 import { task, mkfile } from "vesic-js";
-import tokens from "../src/main/core/index.js";
+import tokens from "../src/core/index.js";
 
 function main(options) {
     const data = genGpl("lfds-tokens-colors", tokens.color);

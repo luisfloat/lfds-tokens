@@ -5,7 +5,7 @@ import { terser } from "rollup-plugin-terser";
 import { task } from "vesic-js";
 
 const rollupConfig = (pkg) => ({
-    input: "./src/main/core/index.js",
+    input: "./src/core/index.js",
     output: [
         {
             file: pkg.module,
